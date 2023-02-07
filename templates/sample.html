@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume builder</title>
+</head>
+<body>
+  <div class="heading">
+    <p>Your website was deployed</p>
+      {% if temp1 %}
+    <p hidden>You have selected theme</p>
+      {% else %}
+      <p>please first select your theme</p>
+      <a href="/theme_selection">Theme selection</a>
+      {% endif %}
+
+      {% if all_personal %}
+      <p hidden>You have selected theme</p>
+      {% else %}
+      <p>please first add personal information </p>
+      <a href="/personal_info">Personal information</a>
+      {% endif %}
+
+      {% if all_sm %}
+      <p hidden>You have selected theme</p>
+      {% else %}
+      <p>please first add social media link </p>
+      <a href="/social_media">Social-media link</a>
+      {% endif %}
+
+      {% if all_skills %}
+      <p hidden>You have selected theme</p>
+      {% else %}
+      <p>please first add any 1 skills </p>
+      <a href="/skill">Skills</a>
+      {% endif %}
+
+      {% if all_education %}
+      <p hidden>You have selected theme</p>
+      {% else %}
+      <p>please first add Education</p>
+      <a href="/education">Education</a>
+      {% endif %}
+  </div>
+</body>
+</html>
